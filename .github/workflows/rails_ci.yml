@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ "main" ]
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-22.04
     services:
       postgres:
         image: postgres:11-alpine
